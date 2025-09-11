@@ -1,0 +1,24 @@
+{
+  "name": "react-modal-hrnet",
+  "version": "1.0.0",
+  "description": "A lightweight React modal component for react projects",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build"
+  },
+  "keywords": ["react", "modal"],
+  "author": "Ton Nom",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=17",
+    "react-dom": ">=17"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0",
+    "@vitejs/plugin-react": "^4.0.0"
+  }
+}
