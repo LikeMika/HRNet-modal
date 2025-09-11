@@ -1,8 +1,10 @@
 {
   "name": "react-modal-hrnet-oc",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A lightweight React modal component for react projects",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "main": "./dist/index.umd.js",
   "module": "./dist/index.es.js",
   "exports": {
@@ -17,7 +19,10 @@
     "build": "vite build",
     "prepublishOnly": "npm run build"
   },
-  "keywords": ["react", "modal"],
+  "keywords": [
+    "react",
+    "modal"
+  ],
   "author": "Ton Nom",
   "license": "MIT",
   "peerDependencies": {
