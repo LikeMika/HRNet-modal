@@ -116,7 +116,7 @@ export default function Modal({
       ref={overlayRef}
       className="hrn-modal__overlay"
       onMouseDown={handleOverlayMouseDown}
-      aria-hidden="true"
+
     >
       <div
         className={`hrn-modal__dialog ${className}`}
