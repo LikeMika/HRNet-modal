@@ -26,8 +26,8 @@
     "react",
     "modal"
   ],
-  "author": "Ton Nom",
-  "license": "MIT",
+  "author": "Michael Bricout",
+  "license": "UNLICENSED",
   "peerDependencies": {
     "react": ">=17",
     "react-dom": ">=17"

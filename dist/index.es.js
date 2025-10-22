@@ -57,9 +57,9 @@ function oe() {
           return "Profiler";
         case $:
           return "StrictMode";
-        case h:
-          return "Suspense";
         case T:
+          return "Suspense";
+        case h:
           return "SuspenseList";
         case K:
           return "Activity";
@@ -236,7 +236,7 @@ React keys must be passed directly to JSX without using spread:
     function A(e) {
       typeof e == "object" && e !== null && e.$$typeof === g && e._store && (e._store.validated = 1);
     }
-    var i = te, g = Symbol.for("react.transitional.element"), w = Symbol.for("react.portal"), j = Symbol.for("react.fragment"), $ = Symbol.for("react.strict_mode"), v = Symbol.for("react.profiler"), u = Symbol.for("react.consumer"), S = Symbol.for("react.context"), m = Symbol.for("react.forward_ref"), h = Symbol.for("react.suspense"), T = Symbol.for("react.suspense_list"), Y = Symbol.for("react.memo"), U = Symbol.for("react.lazy"), K = Symbol.for("react.activity"), Q = Symbol.for("react.client.reference"), I = i.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, q = Object.prototype.hasOwnProperty, ee = Array.isArray, M = console.createTask ? console.createTask : function() {
+    var i = te, g = Symbol.for("react.transitional.element"), w = Symbol.for("react.portal"), j = Symbol.for("react.fragment"), $ = Symbol.for("react.strict_mode"), v = Symbol.for("react.profiler"), u = Symbol.for("react.consumer"), S = Symbol.for("react.context"), m = Symbol.for("react.forward_ref"), T = Symbol.for("react.suspense"), h = Symbol.for("react.suspense_list"), Y = Symbol.for("react.memo"), U = Symbol.for("react.lazy"), K = Symbol.for("react.activity"), Q = Symbol.for("react.client.reference"), I = i.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, q = Object.prototype.hasOwnProperty, ee = Array.isArray, M = console.createTask ? console.createTask : function() {
       return null;
     };
     i = {
@@ -301,8 +301,8 @@ function le({
       'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
     )) || i.current, S = requestAnimationFrame(() => u == null ? void 0 : u.focus());
     return () => {
-      var h, T;
-      cancelAnimationFrame(S), document.body.style.overflow = v, w.current && ((T = (h = w.current).focus) == null || T.call(h));
+      var T, h;
+      cancelAnimationFrame(S), document.body.style.overflow = v, w.current && ((h = (T = w.current).focus) == null || h.call(T));
     };
   }, [c, x]), H(() => {
     if (!c || !b) return;
@@ -317,8 +317,8 @@ function le({
           u.preventDefault(), i.current.focus();
           return;
         }
-        const h = m[0], T = m[m.length - 1];
-        !u.shiftKey && document.activeElement === T && (u.preventDefault(), h.focus()), u.shiftKey && document.activeElement === h && (u.preventDefault(), T.focus());
+        const T = m[0], h = m[m.length - 1];
+        !u.shiftKey && document.activeElement === h && (u.preventDefault(), T.focus()), u.shiftKey && document.activeElement === T && (u.preventDefault(), h.focus());
       }
     };
     return document.addEventListener("keydown", v, !0), () => document.removeEventListener("keydown", v, !0);
@@ -333,7 +333,6 @@ function le({
         ref: A,
         className: "hrn-modal__overlay",
         onMouseDown: $,
-        "aria-hidden": "true",
         children: /* @__PURE__ */ p.jsxs(
           "div",
           {
